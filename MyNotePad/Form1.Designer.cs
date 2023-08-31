@@ -39,6 +39,8 @@ namespace MyNotePad
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,18 +79,21 @@ namespace MyNotePad
             this.마이메모장정보ToolStripMenuItem.Name = "마이메모장정보ToolStripMenuItem";
             this.마이메모장정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.마이메모장정보ToolStripMenuItem.Text = "마이메모장 정보";
+            this.마이메모장정보ToolStripMenuItem.Click += new System.EventHandler(this.마이메모장정보ToolStripMenuItem_Click);
             // 
             // 열기ToolStripMenuItem
             // 
             this.열기ToolStripMenuItem.Name = "열기ToolStripMenuItem";
             this.열기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.열기ToolStripMenuItem.Text = "열기";
+            this.열기ToolStripMenuItem.Click += new System.EventHandler(this.열기ToolStripMenuItem_Click);
             // 
             // 저장ToolStripMenuItem
             // 
             this.저장ToolStripMenuItem.Name = "저장ToolStripMenuItem";
             this.저장ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.저장ToolStripMenuItem.Text = "저장";
+            this.저장ToolStripMenuItem.Click += new System.EventHandler(this.저장ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -100,6 +105,7 @@ namespace MyNotePad
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
             this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
+            this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -109,6 +115,10 @@ namespace MyNotePad
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBox1.Size = new System.Drawing.Size(479, 392);
             this.textBox1.TabIndex = 1;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -139,6 +149,8 @@ namespace MyNotePad
         private System.Windows.Forms.ToolStripMenuItem 도움말ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 마이메모장정보ToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
